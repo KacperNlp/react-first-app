@@ -1,0 +1,54 @@
+.contact-containers {
+  margin: 30px 0 0 50px;
+  width: 300px;
+}
+.contact-containers form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-containers textarea {
+  display: block;
+  width: 300px;
+  height: 200px;
+  padding: 5px;
+  margin-bottom: 20px;
+  line-height: 150%;
+  font-size: 16px;
+  resize: none;
+}
+.contact-containers button {
+  align-self: flex-end;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid #07bb82;
+  color: #efefef;
+  background: linear-gradient(
+    90deg,
+    #0b7197,
+    #089cdc,
+    #07bb82,
+    #48b81e,
+    #ff9709,
+    #c65612
+  );
+  font-size: 16px;
+  background-size: 700%;
+  outline: none;
+  transition: 0.5s;
+  background-position: 0 0;
+  animation: none;
+}
+.contact-containers button:hover {
+  cursor: pointer;
+  animation: buttonAnimation 8s linear infinite alternate;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
